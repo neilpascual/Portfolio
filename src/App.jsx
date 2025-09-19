@@ -42,9 +42,9 @@ const experience = [
     bullets: ['Built responsive UIs', 'Improved performance by 30%'],
   },
   {
-    role: 'Web Developer Intern',
-    org: 'Startup Labs',
-    date: '2022 — 2023',
+    role: 'Software Engineer Intern',
+    org: 'FullSuite',
+    date: 'Sep 2025 — Dec 2025',
     bullets: ['Implemented reusable components', 'Automated testing pipelines'],
   },
 ];
@@ -91,7 +91,7 @@ export default function App() {
     <div className={`${dark ? 'dark' : ''}`}>
       <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 antialiased scroll-smooth">
         {/* HEADER */}
-        <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b">
+        <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b border-gray-200 ">
           <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
             <div className="text-2xl font-semibold">Neil</div>
 
@@ -283,9 +283,9 @@ export default function App() {
                 <h3 className="font-medium">Get in touch</h3>
                 <p className="mt-2 text-slate-600 dark:text-slate-300">Feel free to reach out about new opportunities, freelance projects, or just to say hi.</p>
                 <div className="mt-4 space-y-3">
-                  <div className="flex items-center gap-3"><Mail size={16} /><div className="text-sm">youremail@example.com</div></div>
-                  <div className="flex items-center gap-3"><Github size={16} /><div className="text-sm">github.com/yourname</div></div>
-                  <div className="flex items-center gap-3"><Linkedin size={16} /><div className="text-sm">linkedin.com/in/yourname</div></div>
+                  <div className="flex items-center gap-3"><Mail size={16} /><div className="text-sm">neilaronpascual.dev@gmail.com</div></div>
+                  <div className="flex items-center gap-3"><Github size={16} /><div className="text-sm">github.com/neilpascual</div></div>
+                  <div className="flex items-center gap-3"><Linkedin size={16} /><div className="text-sm">linkedin.com/in/neilaronpascual</div></div>
                 </div>
               </div>
 
@@ -312,7 +312,7 @@ export default function App() {
 
         <footer className="mt-12 border-t py-6 bg-white/50 dark:bg-slate-900/50">
           <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-sm text-slate-500 dark:text-slate-400">© {new Date().getFullYear()} Your Name. All rights reserved.</div>
+            <div className="text-sm text-slate-500 dark:text-slate-400">© {new Date().getFullYear()} Neil. All rights reserved.</div>
             <div className="flex gap-4 items-center text-slate-500 dark:text-slate-400">
               <a href="#">Privacy</a>
               <a href="#">Terms</a>
