@@ -9,7 +9,7 @@ export default function About() {
         <p className="mt-4 text-slate-600 dark:text-slate-300">
           I’m a frontend engineer with a focus on building accessible and performant web apps.
         </p>
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-5 w-245">
           {skills.map((s) => (
             <div key={s.name} className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-sm">
               <div className="flex justify-between text-sm font-medium">
