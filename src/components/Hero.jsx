@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import neil from "../assets/neil.jpg";
 
 export default function Hero() {
   return (
@@ -69,13 +70,23 @@ export default function Hero() {
       <div className="bg-white rounded-2xl shadow p-6 dark:bg-slate-800">
         <div className="h-56 md:h-72 flex items-center justify-center rounded-lg bg-white dark:bg-slate-500">
           <div className="text-center">
-            <div className="text-sm text-white">Available for</div>
+            {/* <div className="bg-white rounded-2xl shadow p-6 dark:bg-slate-800"> */}
+            <div className="h-56 md:h-72 w-106 aspect-square flex items-center justify-center rounded-lg overflow-hidden bg-white dark:bg-slate-500">
+                <img
+                src={neil}
+                alt="Profile"
+                className="h-full w-full object-cover"
+                />
+            </div>
+            {/* </div> */}
+
+            {/* <div className="text-sm text-white">Available for</div>
             <div className="mt-2 font-semibold text-lg">
               Freelance & Full-time
             </div>
             <div className="mt-6 text-slate-400 text-sm">
               Open to remote or hybrid roles. Based in Manila (UTC+8).
-            </div>
+            </div> */}
           </div>
         </div>
 
