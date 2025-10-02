@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Left Side */}
       <div>
         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-          Hi, I’m <span className="text-sky-600">Neil</span> — a Frontend Engineer.
+          Hi, I’m <span className="text-sky-600 transition-all duration-300 hover:scale-110">Neil</span> — a Frontend Engineer.
         </h1>
         <p className="mt-4 text-lg text-slate-600 dark:text-slate-300">
           I build scalable, accessible, and delightful web experiences using modern tools and thoughtful design.
@@ -67,7 +67,7 @@ export default function Hero() {
       </div>
 
       {/* Right Side */}
-      <div className="bg-white rounded-2xl shadow p-6 dark:bg-slate-800">
+      <div className="bg-white rounded-2xl shadow p-6 dark:bg-slate-800 ">
         <div className="h-56 md:h-72 flex items-center justify-center rounded-lg bg-white dark:bg-slate-500">
           <div className="text-center">
             {/* <div className="bg-white rounded-2xl shadow p-6 dark:bg-slate-800"> */}
@@ -75,7 +75,7 @@ export default function Hero() {
                 <img
                 src={neil}
                 alt="Profile"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover transition-all duration-300 hover:scale-120"
                 />
             </div>
             {/* </div> */}

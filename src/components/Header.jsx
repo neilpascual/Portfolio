@@ -9,7 +9,7 @@ export default function Header({ active, dark, setDark }) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md shadow-sm">
       <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
-        <div className="font-bold text-lg">MyPortfolio</div>
+        <div className="font-bold text-3xl"><a href="">Neil</a></div>
         <nav className="hidden md:flex gap-6">
           {navItems.map((item) => (
             <a
