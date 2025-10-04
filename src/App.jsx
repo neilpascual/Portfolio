@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 const sections = ["about", "projects", "experience", "contact"];
 
 export default function App() {
-  const [active, setActive] = useState("about");
+  const [active, setActive] = useState("Hero");
   const [dark, setDark] = useState(false);
 
   useEffect(() => {

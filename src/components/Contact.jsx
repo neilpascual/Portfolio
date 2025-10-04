@@ -3,8 +3,9 @@ import SectionWrapper from "./SectionWrapper";
 export default function Contact() {
   return (
     <SectionWrapper id="contact">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
       <h2 className="text-2xl font-semibold mb-6">Contact</h2>
-      <form className="space-y-4 max-w-xl">
+      <form className="space-y-4 max-w-screen">
         <input
           type="text"
           placeholder="Your Name"
@@ -23,6 +24,7 @@ export default function Contact() {
           Send Message
         </button>
       </form>
+      </div>
     </SectionWrapper>
   );
 }

@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
 import neil from "../assets/neil.jpg";
 
+
 export default function Hero() {
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -17,7 +19,7 @@ export default function Hero() {
           <span className="text-sky-600 transition-all duration-300 hover:scale-110 inline-block">
             Neil
           </span>{" "}
-          — a Frontend Engineer.
+          — a Software Engineer.
         </h1>
 
         <p className="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-xl">
@@ -52,7 +54,7 @@ export default function Hero() {
           </a>
           <a
             aria-label="linkedin"
-            href="#"
+            href="https://www.linkedin.com/in/neil-aron-pascual/"
             className="hover:text-slate-800 dark:hover:text-slate-200"
           >
             <Linkedin size={20} />

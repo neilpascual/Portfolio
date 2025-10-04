@@ -4,7 +4,7 @@ import SectionWrapper from "./SectionWrapper";
 export default function About() {
   return (
     <SectionWrapper id="about">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <div className="max-w-screen mx-auto px-4 sm:px-6">
         <h2 className="text-2xl sm:text-3xl font-semibold">About me</h2>
         <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300">
           I’m a frontend engineer with a focus on building accessible and performant web apps.
