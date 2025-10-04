@@ -9,6 +9,8 @@ export const experience = [
     role: 'Software Engineer Intern',
     org: 'FullSuite',
     date: 'Sep 2025 — Dec 2025',
-    bullets: ['Implemented reusable components', 'Automated testing pipelines'],
+    bullets: ['Implemented reusable components', 'Automated testing pipelines',
+      "Implement Apps Script in the Company's WorkSpace"
+    ],
   },
 ];
