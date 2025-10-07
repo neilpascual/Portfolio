@@ -17,6 +17,8 @@ export default function Projects() {
               <p className="mt-2 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
                 {p.desc}
               </p>
+              <button onClick={p.url} className="mr-3">Visit</button>
+              <button onClick={p.url}>Code</button>
             </div>
           ))}
         </div>
