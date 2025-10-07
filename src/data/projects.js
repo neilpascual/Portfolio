@@ -20,4 +20,11 @@ export const projects = [
     url: '#',
     img: null,
   },
+  {
+    title: 'TiktakNeil',
+    desc: 'Tic-tac-toe game with a fun twist, built using React, Tailwind and Framer-Motion.',
+    tags: ['React', 'Tailwind', 'Framer-Motion'],
+    url: 'https://tiktakneil.vercel.app',
+    img: null,
+  },
 ];
