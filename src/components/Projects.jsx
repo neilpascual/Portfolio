@@ -10,6 +10,8 @@ export default function Projects() {
           <div key={p.title} className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <h3 className="font-semibold">{p.title}</h3>
             <p className="mt-2 text-slate-600 dark:text-slate-300">{p.desc}</p>
+            <button className="mr-3.5" onClick={p.url}>View</button>
+            <button onClick={p.url}>Code</button>
           </div>
         ))}
       </div>

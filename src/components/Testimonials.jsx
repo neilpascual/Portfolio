@@ -8,8 +8,8 @@ export default function Testimonials() {
       <div className="grid md:grid-cols-2 gap-6">
         {testimonials.map((t, i) => (
           <div key={i} className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm italic">
-            “{t.text}”
-            <div className="mt-2 font-medium not-italic">— {t.name}</div>
+            “{t.quote}”
+            <div className="mt-2 font-medium not-italic">— {t.author}</div>
           </div>
         ))}
       </div>
