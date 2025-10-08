@@ -30,7 +30,7 @@ export default function Projects() {
                 {p.desc}
               </p>
 
-              {/* Tags
+              {/* Tags */}
               {p.tags && (
                 <div className="mt-3 flex flex-wrap gap-2">
                   {p.tags.map((tag, i) => (
@@ -42,7 +42,7 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-              )} */}
+              )}
 
               {/* Buttons */}
               <div className="mt-4 flex gap-3">
