@@ -8,11 +8,11 @@ export const projects = [
     code: ''
   },
   {
-    title: 'Portfolio CMS',
-    desc: 'Headless CMS for portfolio projects with markdown support and image uploads.',
+    title: 'Portfolio Website',
+    desc: 'My personal portfolio website built with React.js.',
     tags: ['Next.js', 'Strapi', 'Cloudinary'],
     live: '#',
-    img: null,
+    img: '/projects/neilp.png',
     code: 'https://github.com/neilpascual/Portfolio'
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     desc: 'Tic-tac-toe game with a fun twist, built using React, Tailwind and Framer-Motion.',
     tags: ['React', 'Tailwind', 'Framer-Motion'],
     live: 'https://tiktakneil.vercel.app',
-    img: null,
+    img: '/projects/tiktakneil.png',
     code: 'https://github.com/neilpascual/tictactoe'
   },
 ];
