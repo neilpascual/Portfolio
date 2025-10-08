@@ -53,7 +53,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="inline-block px-4 py-2 text-sm font-medium text-white bg-sky-600 rounded-md hover:bg-sky-700 transition"
                   >
-                    Visit
+                    LIVE
                   </a>
                 )}
 
