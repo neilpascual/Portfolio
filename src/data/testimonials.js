@@ -7,4 +7,8 @@ export const testimonials = [
     quote: 'Delivered above expectations and shipped earlier than planned.',
     author: 'John Smith, CTO',
   },
+    {
+    quote: 'Delivered above expectations and shipped earlier than planned.',
+    author: 'John Doe, CEO',
+  },
 ];
