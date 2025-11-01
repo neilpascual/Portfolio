@@ -39,4 +39,12 @@ export const projects = [
     img: '/projects/kapetbahay.png',
     code: 'https://github.com/neilpascual/kapet-bahay'
   },
+     {
+    title: "Test App",
+    desc: 'A Test for Applicant Screening and Employee Training',
+    tags: ['React', 'Tailwind', 'Framer-Motion','NodeJS','MySQL'],
+    live: null,
+    img: null,
+    code: null
+  },
 ];
