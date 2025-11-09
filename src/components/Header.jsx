@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Moon, Sun } from "lucide-react";
 
-const navItems = ["about", "projects", "experience", "contact"];
+const navItems = ["about", "projects", "experience", "testimonials", "contact"];
 
 export default function Header({ active, dark, setDark }) {
   const [open, setOpen] = useState(false);
@@ -24,12 +24,6 @@ export default function Header({ active, dark, setDark }) {
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <button
-            onClick={() => setDark(!dark)}
-            className="p-2 rounded-full bg-slate-100 dark:bg-slate-800"
-          >
-            {dark ? <Sun size={16} /> : <Moon size={16} />}
-          </button>
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden p-2 rounded bg-slate-100 dark:bg-slate-800"
