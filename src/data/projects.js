@@ -24,11 +24,11 @@ export const projects = [
     code: 'https://github.com/neilpascual/kapet-bahay'
   },
      {
-    title: "Test App",
+    title: "TsekSuite",
     desc: 'A Test for Applicant Screening and Employee Training',
     tags: ['React', 'Tailwind', 'Framer-Motion','NodeJS','MySQL'],
-    live: null,
-    img: null,
-    code: null
+    live: 'https://fullsuite.tseksuite.com/auth/login',
+    img: '/projects/TsekSuite.png',
+    code: 'https://github.com/neilpascual/tseksuite-frontend/tree/dev'
   },
 ];
