@@ -49,8 +49,17 @@ export const projects = [
     desc: 'A Test for Applicant Screening and Employee Training',
     tags: ['Flutter','Dart','Firebase','Google Maps API'],
     // live: 'https://fullsuite.tseksuite.com/auth/login',
-    img: null,
-    code: 'https://github.com/neilpascual/tseksuite-frontend/tree/dev',
+    img: '/projects/no-image.png',
+    code: 'https://github.com/neilpascual/BalungGo',
     category: 'mobile'
+  },
+         {
+    title: "IjuanaBeSafe",
+    desc: 'Bullying Report System For Pangasinan State University - Urdaneta City Campus',
+    tags: ['HTML','PHP'],
+    // live: 'https://fullsuite.tseksuite.com/auth/login',
+    img: '/projects/no-image.png',
+    code: 'https://github.com/neilpascual/ijuanabesafe',
+    category: 'web'
   },
 ];
