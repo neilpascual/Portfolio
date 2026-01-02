@@ -7,7 +7,7 @@ export default function About() {
       <div className="max-w-screen mx-auto px-4 sm:px-6">
         <h2 className="text-2xl sm:text-3xl font-semibold">About me</h2>
         <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300">
-          I’m a frontend engineer with a focus on building accessible and performant web apps.
+          I’m a software engineer with a focus on building accessible and performant web apps.
           <br/>I have hands-on experience using HTML, CSS, JavaScript, and React.js to create clean and functional interfaces, along with experience in Flutter and Dart for mobile app development. 
           I also work with MySQL and MongoDB, giving me a good understanding of how frontend systems interact with databases.
 

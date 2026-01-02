@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
 import neil from "../assets/neil.jpg";
+import neilHover from "../assets/neilHover.jpg"
 
 
 export default function Hero() {
@@ -81,18 +82,32 @@ export default function Hero() {
       <div className="w-full max-w-sm mx-auto sm:max-w-md">
         <div className="overflow-hidden rounded-2xl shadow bg-white dark:bg-slate-800">
           <div className="aspect-square">
-            <img
+            {/* <img
               src={neil}
               alt="Neil Profile"
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-            />
+            /> */}
+            <div className="relative w-full h-full overflow-hidden rounded-lg group">
+                <img
+                  src={neil}
+                  alt="Neil Profile"
+                  className="w-full h-full object-cover transition-opacity duration-20 group-hover:opacity-0"
+                />
+
+                <img
+                  src={neilHover}
+                  alt="Neil Hover Profile"
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-20 group-hover:opacity-100"
+                />
+            </div>
+
           </div>
 
           {/* Contact Info */}
-          <div className="p-6 grid grid-cols-2 gap-4">
+          <div className="p-6 grid grid-cols-2 gap-3">
             <div className="space-y-1">
               <div className="text-xs text-slate-500">Email</div>
-              <div className="text-sm font-medium break-all">
+              <div className="font-medium break-all">
                 neilaronpascual.dev@gmail.com
               </div>
             </div>

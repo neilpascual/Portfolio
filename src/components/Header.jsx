@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Moon, Sun } from "lucide-react";
+// import { Moon, Sun } from "lucide-react";
 
-const navItems = ["about", "projects", "experience", "testimonials", "contact"];
+const navItems = ["about", "projects", "experience", "contact"];
 
 export default function Header({ active, dark, setDark }) {
   const [open, setOpen] = useState(false);
