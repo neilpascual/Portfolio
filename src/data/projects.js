@@ -46,7 +46,7 @@ export const projects = [
   },
        {
     title: "BalungGo",
-    desc: 'A Test for Applicant Screening and Employee Training',
+    desc: 'A mobile tourism app for Balungao Pangasinan',
     tags: ['Flutter','Dart','Firebase','Google Maps API'],
     // live: 'https://fullsuite.tseksuite.com/auth/login',
     img: '/projects/no-image.png',
