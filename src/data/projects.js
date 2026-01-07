@@ -49,7 +49,7 @@ export const projects = [
     desc: 'A mobile tourism app for Balungao Pangasinan',
     tags: ['Flutter','Dart','Firebase','Google Maps API'],
     // live: 'https://fullsuite.tseksuite.com/auth/login',
-    img: '/projects/no-image.png',
+    img: '/projects/balunggo.png',
     code: 'https://github.com/neilpascual/BalungGo',
     category: 'mobile'
   },
