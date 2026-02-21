@@ -114,7 +114,7 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 text-sm text-white bg-sky-600 rounded-md hover:bg-sky-700 transition"
-                  >
+                  >View
                   </a>
                 )}
               </div>
