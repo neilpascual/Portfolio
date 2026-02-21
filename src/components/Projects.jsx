@@ -17,8 +17,8 @@ export default function Projects() {
         </h2>
 
         {/* Tabs */}
-        <div className="flex gap-4 mb-8">
-          {["web", "mobile"].map((tab) => (
+        <div className="flex gap-4 mb-8 flex-wrap">
+          {["web", "mobile", "design"].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -29,7 +29,11 @@ export default function Projects() {
                     : "bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600"
                 }`}
             >
-              {tab === "web" ? "Web Projects" : "Mobile Projects"}
+              {tab === "web"
+                ? "Web Projects"
+                : tab === "mobile"
+                ? "Mobile Projects"
+                : "Design & Graphics"}
             </button>
           ))}
         </div>
@@ -39,24 +43,31 @@ export default function Projects() {
           {filteredProjects.map((p) => (
             <div
               key={p.title}
-              className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col"
             >
+              {/* Image */}
               {p.img && (
                 <div className="mb-4 overflow-hidden rounded-md">
                   <img
                     src={p.img}
                     alt={`${p.title} screenshot`}
                     loading="lazy"
-                    className="w-full h-40 object-cover rounded-md hover:scale-105 transition"
+                    className={`w-full ${
+                      p.category === "design" ? "h-56" : "h-40"
+                    } object-cover rounded-md hover:scale-105 transition`}
                   />
                 </div>
               )}
 
+              {/* Title */}
               <h3 className="text-lg font-semibold">{p.title}</h3>
+
+              {/* Description */}
               <p className="mt-2 text-slate-600 dark:text-slate-300 text-sm flex-grow">
                 {p.desc}
               </p>
 
+              {/* Tags */}
               {p.tags && (
                 <div className="mt-3 flex flex-wrap gap-2">
                   {p.tags.map((tag, i) => (
@@ -70,19 +81,22 @@ export default function Projects() {
                 </div>
               )}
 
-              <div className="mt-4 flex gap-3">
-                {p.live && (
+              {/* Buttons */}
+              <div className="mt-4 flex gap-3 flex-wrap">
+                {/* Live (hide for design) */}
+                {p.live && p.category !== "design" && (
                   <a
                     href={p.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 text-sm text-white bg-sky-600 rounded-md hover:bg-sky-700 transition"
                   >
-                    LIVE
+                    Live
                   </a>
                 )}
 
-                {p.code && (
+                {/* Code (hide for design) */}
+                {p.code && p.category !== "design" && (
                   <a
                     href={p.code}
                     target="_blank"
@@ -90,6 +104,17 @@ export default function Projects() {
                     className="px-4 py-2 text-sm border border-sky-600 text-sky-600 rounded-md hover:bg-sky-600 hover:text-white transition"
                   >
                     Code
+                  </a>
+                )}
+
+                {/* View Full for Design */}
+                {p.category === "design" && (
+                  <a
+                    href={p.img}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm text-white bg-sky-600 rounded-md hover:bg-sky-700 transition"
+                  >
                   </a>
                 )}
               </div>

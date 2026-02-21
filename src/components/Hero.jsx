@@ -30,20 +30,31 @@ export default function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="mt-6 flex flex-wrap gap-3">
-          <a
-            href="#projects"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-sky-600 text-white rounded-md shadow hover:bg-sky-700 transition"
-          >
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-4 py-2 border rounded-md hover:bg-slate-100 dark:hover:bg-slate-700 transition"
-          >
-            Get in touch
-          </a>
-        </div>
+        {/* CTA Buttons */}
+<div className="mt-6 flex flex-wrap gap-3">
+  <a
+    href="#projects"
+    className="inline-flex items-center gap-2 px-4 py-2 bg-sky-600 text-white rounded-md shadow hover:bg-sky-700 transition"
+  >
+    View Projects
+  </a>
+
+  <a
+    href="#contact"
+    className="inline-flex items-center gap-2 px-4 py-2 border rounded-md hover:bg-slate-100 dark:hover:bg-slate-700 transition"
+  >
+    Get in touch
+  </a>
+
+  <a
+    href="/resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-200 dark:bg-slate-700 text-gray-800 dark:text-slate-200 rounded-md shadow hover:bg-gray-300 dark:hover:bg-slate-600 transition"
+  >
+    View Resume
+  </a>
+</div>
 
         {/* Social Icons */}
         <div className="mt-6 flex gap-4 items-center text-slate-600 dark:text-slate-400">
@@ -61,13 +72,13 @@ export default function Hero() {
           >
             <Linkedin size={20} />
           </a>
-          <a
+          {/* <a
             aria-label="twitter"
             href="#"
             className="hover:text-slate-800 dark:hover:text-slate-200"
           >
             <Twitter size={20} />
-          </a>
+          </a> */}
           <a
             aria-label="facebook"
             href="https://www.facebook.com/neilaron.pascual"
