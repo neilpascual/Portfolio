@@ -2,6 +2,7 @@ import { skills } from "../data/skills";
 import SectionWrapper from "./SectionWrapper";
 
 export default function About() {
+  
   return (
     <SectionWrapper id="about">
       <div className="max-w-screen mx-auto px-4 sm:px-6">
