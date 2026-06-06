@@ -22,7 +22,7 @@ export default function About() {
           {skills.map((s) => (
             <div
               key={s.name}
-              className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-sm"
+              className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-sm transition-all duration-500 ease-in-out"
             >
               <div className="flex justify-between text-sm font-medium">
                 <span>{s.name}</span>
